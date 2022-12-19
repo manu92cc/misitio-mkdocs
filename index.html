@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="http://sitio.github.io/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>MkDocs tutorial</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Inicio";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MkDocs tutorial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Inicio</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#que-es-mkdocs">¿Qué es MkDocs?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#como-utilizar-mkdocs">Cómo utilizar MkDocs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instalacion">Instalación</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#instalamos-pip">Instalamos Pip</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#instalamos-mkdocs">Instalamos MkDocs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#comandos-basicos">Comandos básicos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crear-y-lanzar-primer-proyecto">Crear y lanzar primer proyecto</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configurar-nuestro-sitio-web">Configurar nuestro sitio web</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#configuracion-de-pagina-inicio-indexmd">Configuración de página Inicio: index.md</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuracion-de-mkdocsyml">Configuración de mkdocs.yml</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cambiar-el-tema-de-nuestrop-sitio-web">Cambiar el tema de nuestrop sitio web</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#construir-el-proyecto">Construir el proyecto</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#y-todo-listo">Y ¡Todo listo!</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="contact/">Contaco</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MkDocs tutorial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Inicio</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="bienvenid">¡Bienvenid@!</h1>
+<p>Esta página es un ejemplo de lo que se puede desarrollar con la herramienta <strong>MkDocs</strong>.
+Para una información más detallada puedes visitar <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<h2 id="que-es-mkdocs">¿Qué es MkDocs?</h2>
+<p>MkDocs es una herramienta de documentación para crear sitios web estáticos. Es bastante sencillo y ligero de utilizar. Mediante el lenguaje <em>markdown</em> es posible realizar cualquier documentación necesaria para tus proyectos.</p>
+<h2 id="como-utilizar-mkdocs">Cómo utilizar MkDocs</h2>
+<p>Para utilizar <strong>MkDocs</strong> sólo necesitaremos nuestro equipo con conexión a internet. En este caso utilizaremos <em>Ubuntu</em> (En windows los comandos pueden variar un poco, pero la teoría es la misma).
+Todo el proceso puede realizarse con <em>el terminal</em>.</p>
+<h2 id="instalacion">Instalación</h2>
+<p>Para instalar MkDocs necesitaremos tener instalado python en nuestro equipo.
+Para comprobar qué versión de python tenemos instalada utilizaremos el comando:</p>
+<pre><code class="language-bash">pyton --version
+</code></pre>
+<p>En caso de que no tengamos python instalado solo habrá que instalarlo mediante el comando</p>
+<pre><code>sudo apt install python3
+</code></pre>
+<h3 id="instalamos-pip">Instalamos Pip</h3>
+<p>Instalamos el gestor de paquetes de python <strong>Pip</strong>. (Éste paso solo es necesário una vez si no lo tienes ya instalado)</p>
+<pre><code>apt-get install python-pip
+</code></pre>
+<h3 id="instalamos-mkdocs">Instalamos MkDocs</h3>
+<p>Tan solo falta instalar el propio mkdocs mediante el comando:</p>
+<pre><code>pip install mkdocs
+</code></pre>
+<p>Y ya tendríamos todo listo para empezar a utilizarlo. Sencillo, ¿a que sí?</p>
+<h2 id="comandos-basicos">Comandos básicos</h2>
+<p>Para crear nuestros proyectos tendremos que conocer los siguientes comandos:</p>
+<ul>
+<li><code>mkdocs new [directorio]</code> - Crear un proyecto nuevo en <strong>directorio</strong>.</li>
+<li><code>mkdocs serve</code> - Ejecuta en el servidor indicado nuestro proyecto.</li>
+<li><code>mkdocs serve -a [IP]:[PUERTO]</code> - Si queremos utilizar una dirección ip en concreto.</li>
+<li><code>mkdocs build</code> - Construye el proyecto por nosotros.</li>
+<li><code>mkdocs -h</code> - Muestra la ayuda en el terminal.</li>
+</ul>
+<p>Puedes obtener más información de todos los comandos en <a href="https://www.mkdocs.org/user-guide/cli/">mkdocs.org</a>.</p>
+<h2 id="crear-y-lanzar-primer-proyecto">Crear y lanzar primer proyecto</h2>
+<p>Vamos a crear una primera web de ejemplo.
+Antes de nada preparamos una nueva área de trabajo(opcional, pero recomendable). Puede ser la que quieras. En mi caso será una nueva carpeta en el Escritorio llamada <code>MiSitio</code>.</p>
+<pre><code>cd Escritorio
+mkdir MiSitio
+cd MiSitio
+</code></pre>
+<p>Ahora creamos nuestro proyecto, cuyo nombre será <code>prueba</code>.</p>
+<pre><code>mkdocs new prueba
+</code></pre>
+<p>Esto nos creará los elementos básicos para poder trabajar:</p>
+<ul>
+<li><strong>/prueba</strong> - La carpeta del proyecto que acabamos de crear.<ul>
+<li><strong>/docs</strong> - Donde se almacenarán todos nuestros archivos .md<ul>
+<li><code>index.md</code> - Cada archivo será una página diferente</li>
+</ul>
+</li>
+<li><strong><code>mkdocs.yml</code></strong> - Éste será el archivo de configuración de nuestro proyecto</li>
+</ul>
+</li>
+</ul>
+<p>Para ver que todo funciona correctamente podemos lanzar nuestro sitio web con:</p>
+<pre><code>cd prueba
+mkdocs serve
+</code></pre>
+<p>Y, si todo ha salido bien, nos dirá la dirección virtual de nuestro sitio web, en mi caso, <strong>http://127.0.0.1:8000/</strong>.
+Accedemos podremos ver algo como esto:
+<img alt="Screenshot" src="https://www.mkdocs.org/img/screenshot.png" /></p>
+<p>¡Listo! Ya tenemos nuestro sitio virtual abierto y funcionando. Ahora solo falta configurarlo para mostrar nuestra información.</p>
+<h2 id="configurar-nuestro-sitio-web">Configurar nuestro sitio web</h2>
+<h3 id="configuracion-de-pagina-inicio-indexmd">Configuración de página Inicio: index.md</h3>
+<p>Podemos modificar el archivo <code>index.md</code> a nuestro antojo para crear la página que queramos mediante lenguaje <strong>markdown</strong>.
+Por ejemplo:</p>
+<pre><code class="language-markdown"># ¡Hola!
+
+## Éste es mi sitio web
+
+Espero que te guste. _;)_ 
+</code></pre>
+<p>Si guardamos el archivo veremos que la página se <em>refresca</em> automáticamente mostrando lo que acabamos de añadir al archivo <code>index.md</code>.
+También podemos crear más archivos .md en la carpeta docs para enlazarlos mediante el archivo <code>mkdocs.yml</code>. Veámos como.</p>
+<h3 id="configuracion-de-mkdocsyml">Configuración de <em>mkdocs.yml</em></h3>
+<p>Este archivo es el archivo <strong>maestro</strong> de nuestro sitio. Aqui podemos cambiar el título de la página, añadir más páginas, editar el tema y otras opciones.</p>
+<p>Por ejemplo. Vamos a crear otro archivo en la carpeta docs/ con el nombre <code>sobremi.md</code>. Y en su interior escribiremos una descripción nuestra como ejemplo y guardaremos el archivo.</p>
+<pre><code># Sobre mí
+
+Soy una persona muy guapa.
+</code></pre>
+<p>Ahora, en el archivo de configuración <code>mkdocs.yml</code> añadiremos  lo siguiente (y de paso cambiaremos el nombre de nuestro sitio por el que queramos, por ejemplo, <em>Mi sitio web</em>:</p>
+<pre><code>site_name: Mi sitio web
+
+nav:        # Este elemento vinvulará nuestras páginas por nosotros.
+    Inicio: index.md    # Ésta será nuestra página de inicio.
+    Sobre mi: sobremi.md    # Ésta será nuestra página de presentación.
+</code></pre>
+<p>Una vez guardado veremos que en nuestra página aparece un nuevo enlace en la barra de navegación que nos dirige hacia el archivo</p>
+<p>Fácil, ¿no?</p>
+<h2 id="cambiar-el-tema-de-nuestrop-sitio-web">Cambiar el tema de nuestrop sitio web</h2>
+<p>En éste mismo archivo podemos cambiar el tema de nuestras páginas. En mi caso voy a cambiarlo por el tema <code>readthedocs</code>. Para ello añadimos la siguiente línea en <code>mkdocs.yml</code></p>
+<pre><code># Aquí estará el código anterior
+theme: readthedocs
+</code></pre>
+<p>Una vez guardado vemos como cambia el tema por el que hemos elegido. Puedes buscar mas temas <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">aquí</a>.</p>
+<h2 id="construir-el-proyecto">Construir el proyecto</h2>
+<p>Una vez creas que ya has terminado tu proyecto solo tienes que construirlo mediante el comando:</p>
+<pre><code>mkdocs build
+</code></pre>
+<p>Esto te creará todas las carpetas y archivos necesários para poder dar por terminado tu proyecto.</p>
+<h2 id="y-todo-listo">Y ¡Todo listo!</h2>
+<p>Ahora ya tienes tu proyecto terminado y puedes poblucar tu sitio web.
+Te recordamos que esto ha sido un pequeño tutorial, si quieres más información puedes consultar las páginas oficiales de <a href="https://www.mkdocs.org">MkDocs</a>, donde podrás encontrar información más detallada y completa de todos estos pasos y más opciones que ofrece la herramienta.</p>
+<p>¡Nos vemos! <em>;)</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="contact/" class="btn btn-neutral float-right" title="Contaco">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="contact/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2022-12-19 12:48:39.212746+00:00
+-->
